@@ -1,3 +1,9 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+// ./font
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 // navigation
 li.nav-item {
   padding: 20px;
@@ -197,40 +203,53 @@ li.nav-item {
   .container {
     h3 {
       color: #008495;
+      margin-bottom: 60px;
     }
-
-    position: relative;
-    width: auto;
-    height: 140px;
-    left: 40px;
 
     .cooperation-step-by-step {
       list-style: none;
-      li {
+      padding: 0;
+      .desc-block, .arrow-block {
+        width: 17%;
+        font-size: 14px;
+      }
+      .desc-block {
+        margin-left: 50px;
+        line-height: 1.4;
+        height: 170px;
+        vertical-align: text-bottom;
+        display: flex;
+        align-items: center;
+        &:nth-child(6) {
+          margin-left: 0;
+        }
+        &:last-child {
+          width: 22%;
+        }
+      }
+      .arrow-block {
         position: relative;
         text-indent: 30px;
-        height: 140px;
+        height: 170px;
         background-color: #008495;
-        display: inline-block;
+        display: flex;
+        align-items: center;
         zoom: 1;
-        *display: inline;
-        margin-left: 30px;
         padding: 10px 10px 10px 30px;
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
-        line-height: 150px;
-      }
-      .testStatusGood {
+        margin-bottom: 25px;
         &:after {
           content: "";
           position: absolute;
           width: 0;
           height: 0;
-          border-top: 70px solid transparent;
+          border-top: 85px solid transparent;
           border-left: 30px solid #008495;
-          border-bottom: 70px solid transparent;
-          margin: -11px 90px 0 10px;
+          border-bottom: 85px solid transparent;
+          right: -30px;
+          top: 0;
         }
         &:before {
           content: "";
@@ -238,10 +257,9 @@ li.nav-item {
           width: 0;
           height: 0;
           left: 0;
-          border-top: 70px solid transparent;
+          border-top: 85px solid transparent;
           border-left: 30px solid white;
-          border-bottom: 70px solid transparent;
-          margin: -11px 0px 0 0px;
+          border-bottom: 85px solid transparent;
         }
       }
       .arrow-block {
@@ -255,5 +273,58 @@ li.nav-item {
     }
   }
 }
-
 // ./cooparation
+// section-advantages
+.section-advantages {
+  margin-top: 25px;
+  .container {
+    .row {
+      .advantages-text-block {
+        h4 {
+          color: #008495;
+        }
+        p {
+
+        }
+      }
+    }
+  }
+}
+// ./section-advantages
+// section-footer
+.section-footer {
+  background-color: #eeeeee;
+  margin-top: 30px;
+  .container-fluid {
+    .footer-menu {
+      padding: 50px 0;
+    }
+    .row {
+      .col-md-2, .col-md-3 {
+        .footer-link-menu {
+          color: #008495;
+          display: block;
+        }
+      }
+    }
+    .block-right-reserved {
+      padding: 15px 0;
+      border-top: 1px solid #505050;
+      .container {
+        .row {
+          .row {
+            .block-pay {
+              img {
+                margin-right: 20px;
+                &:last-child {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ./section-footer
