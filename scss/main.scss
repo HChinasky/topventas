@@ -23,6 +23,7 @@ li.nav-item {
 
 #menuToggle {
   display: block;
+  z-index: 10!important;
   position: relative;
   top: 10px;
   left: 10px;
@@ -61,9 +62,6 @@ li.nav-item {
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span {
   display: block;
   width: 25px;
@@ -90,56 +88,52 @@ li.nav-item {
   transform-origin: 0% 100%;
 }
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(-6px, -15px);
   background: #232323;
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, 9px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
-  position: absolute;
+  position: fixed;
+  overflow: scroll;
+  z-index: 9;
   width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background: #018496;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  display: none;
+  height: 100%;
+  &.toggled {
+    display: block;
+  }
+  .col-12 {
+    list-style: none;
+    li {
+      a {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 #menu li {
   padding: 10px 0;
   font-size: 22px;
+  color: #fff;
 }
 
 
@@ -148,6 +142,139 @@ li.nav-item {
 }
 
 // ./navigation
+
+// index page
+.home-banner {
+  background: url("../images/index/home_banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  h1 {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 90px;
+  }
+  .description {
+    color: #ffffff;
+    padding: 40px;
+    background: rgba(0,132,149, .5);
+  }
+}
+.news-block, .advantages-block {
+  .container {
+    .row {
+      .title_news, .title_advantages {
+        margin: 20px 0;
+        padding: 10px 15px;
+        background-color: #7a7a7a;
+        position: relative;
+        &:after {
+          content: '';
+          background-color: #7a7a7a;
+          position: absolute;
+          width: 5px;
+          margin-left: 5px;
+          height: 100%;
+          right: -10px;
+          top: 0;
+        }
+        h4 {
+          color: #fff;
+          margin: 0;
+          font-size: 24px;
+        }
+      }
+      .article {
+        border-right: 1px solid #e5e5e5;
+        &:last-child {
+          border-right: none;
+        }
+        .date {
+          color: #008495;
+          font-size: 18px;
+        }
+        h5 {
+          color: #008495;
+          font-size: 18px;
+        }
+        p {
+          color: #333333;
+          font-size: 14px;
+        }
+        .read_more {
+          padding: 10px 15px;
+          background: #008495;
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.advantages-block {
+  margin-top: 20px;
+  .container {
+    .row {
+      .col-xs-5ths {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .article-advantage {
+        .image_advantage {
+          img {
+            width: 100%;
+          }
+        }
+        .text-block {
+          height: 380px;
+          border-bottom: 3px solid #008495 !important;
+          h5 {
+            color: #008495;
+            word-break: break-all;
+            font-size: 16px;
+          }
+          p {
+            color: #333333;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.info-block {
+  margin-top: 20px;
+  .container {
+    .row {
+      .col-12 {
+        .col-8, .col-4 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          img {
+
+          }
+          p {
+            color: #008495;
+            font-size: 18px;
+            margin: 0;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+// ./index page
+
 // breadcrumb
 .breadcrumb-section {
   border-top: 1px solid;
@@ -328,3 +455,194 @@ li.nav-item {
   }
 }
 // ./section-footer
+
+// look at market
+.main_banner {
+  &.look_at_market {
+    background: url("../images/look_market/main_banner.png");
+    background-position: center;
+    background-size: cover;
+  }
+  &.market_research {
+    background: url("../images/market_research/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+  &.news {
+    background: url("../images/news/main_banner.png") center;
+    background-position: center;
+    background-size: 100% 100%;
+    .container-slider {
+      padding: 85px 0;
+    }
+    .row {
+      align-items: center;
+      h1 {
+        }
+    }
+  }
+  &.news-article-block {
+    background: url("../images/news_article/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+  &.ipo-explanation {
+    background: url("../images/ipo_explatation/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container-slider {
+    padding: 60px 0;
+
+    h1 {
+      margin-bottom: 60px;
+    }
+
+    h1, p {
+      color: #fff;
+    }
+  }
+}
+.services-block {
+  .row {
+    .col-12 {
+      &:nth-child(odd) {
+        border-right: 2px solid #bdbdbd;
+      }
+      .row {
+        h5 {
+          color: #008495;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+// news
+.news-container {
+  .row {
+    .nav-prev, .nav-separator, .nav-next {
+      color: #008495;
+    }
+  }
+  .news-block {
+    .news-item {
+      .row {
+        img {
+          width: 100%;
+        }
+        p.date  {
+          color: #008495;
+          font-size: 18px;
+          margin: 20px 0 0 0;
+        }
+        h5 {
+          color: #008495;
+          font-size: 18px;
+        }
+        p  {
+          font-size: 14px;
+          color: #333333;
+        }
+        .read-more {
+          padding: 10px 15px;
+          background: #008495;
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .load-more-block {
+      .load-more {
+        padding: 5px 0;
+        background-color: #d6d6d6;
+        width: 300px;
+        text-align: center;
+        color: #000;
+      }
+    }
+  }
+}
+// ./news
+
+// news article
+.news-article-block {
+  .navigation-block {
+    .article-navigation {
+      padding: 5px 0;
+      background-color: #d6d6d6;
+      width: 300px;
+      text-align: center;
+      color: #000;
+      .nav-prev, .nav-separator, .nav-next {
+        color: #000;
+      }
+    }
+  }
+}
+// ./news article
+// ipo explanation
+.ipo-explanation-block {
+  .row {
+    h4 {
+      font-size: 18px;
+      color: #008495;
+    }
+    ul {
+      padding-left: 10px;
+      li {
+        list-style-type: '>';
+        padding-left: 5px;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    .five-step-for-ipo {
+      width: 100%;
+      background-color: #008495;
+      padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      h3 {
+        color: #fff;
+        margin: 0;
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    .group-invest {
+      &.card-block {
+        box-shadow: 2px 2px 5px 2px rgba(204,204,204,1);
+      }
+      .card-company {
+        h5 {
+          color: #008495;
+          font-size: 18px;
+          margin-top: 10px;
+        }
+        .desc-company {
+          font-size: 13px;
+          color: #333333;
+        }
+        .row {
+          padding-top: 20px;
+          .col-8, .col-4, .col-7, .col-5 {
+            color: #666666;
+            font-size: 10px;
+          }
+        }
+        .percent-up {
+          font-size: 18px;
+          color: #008495;
+        }
+      }
+    }
+  }
+}
+// ./ipo explanation
