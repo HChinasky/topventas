@@ -278,11 +278,17 @@ li.nav-item {
 // breadcrumb
 .breadcrumb-section {
   border-top: 1px solid;
-
   .breadcrumb-custom {
     padding: 7px;
     background-color: #008495;
     margin-bottom: 0;
+    .container {
+      .breadcrumb-item {
+        a {
+          color: #008495;
+        }
+      }
+    }
   }
 }
 
@@ -486,8 +492,39 @@ li.nav-item {
     background-position: center;
     background-size: cover;
   }
+
   &.ipo-explanation {
     background: url("../images/ipo_explatation/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.business_consulting {
+    background: url("../images/investing/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.investing {
+    background: url("../images/main_invest/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.invest_ipo {
+    background: url("../images/invest_ipo/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.portfolio_banner {
+    background: url("../images/portfolio/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.trusts_charity {
+    background: url("../images/trusts_charity/main_banner.png") center;
     background-position: center;
     background-size: cover;
   }
@@ -504,7 +541,7 @@ li.nav-item {
     }
   }
 }
-.services-block {
+.services-block, .invest_and_consult, .investing-block {
   .row {
     .col-12 {
       &:nth-child(odd) {
@@ -646,3 +683,110 @@ li.nav-item {
   }
 }
 // ./ipo explanation
+// business_consulting
+.business_consulting-block, .invest_ipo-block {
+  .row {
+    .col-12 {
+      border-right: 1px solid #bdbdbd;
+      &:last-child {
+        border-right: none;
+      }
+      .row {
+        h5 {
+          color: #008495;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+// ./business_consulting
+// investment and consulting
+.investing-block {
+  .work-for-result-block {
+    background: url("../images/main_invest/work_for_result.png");
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    background-position: center center;
+    .text-block {
+      padding-left: 20px;
+      h5 {
+        color: #008495;
+      }
+    }
+  }
+}
+// ./investment and consulting
+// ipo investing
+.invest_ipo-block {
+  .row {
+    > h5 {
+      color: #008495;
+    }
+    > p {
+      color: #333333;
+      font-size: 14px;
+    }
+    .font-biggest {
+      font-size: 18px;
+    }
+    .font-smaller {
+      font-size: 14px;
+    }
+    .list-advantages {
+      padding-left: 20px;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}
+// ./ipo investing
+// portfolio
+.portfolio-block {
+  margin-top: 50px;
+  .row {
+    h5 {
+      font-size: 18px;
+      color: #008495;
+    }
+    p {
+      font-size: 14px;
+      color: #333333;
+    }
+    .list-portfolio {
+      padding-left: 20px;
+      li {
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+  }
+}
+// ./portfolio
+// trust and charity
+.trusts-charity-block {
+  margin-top: 50px;
+  .row {
+    .list-trust-charity {
+      padding-left: 20px;
+      li {
+        list-style-type: '-';
+        padding-left: 5px;
+        font-size: 14px;
+        color: #333333;
+        margin-top: 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}
+// ./trust and charity

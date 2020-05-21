@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/media.min.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/media.min.css">
     <title>Gulp Server</title>
 </head>
 <body>
@@ -14,17 +14,17 @@
     <nav class="container overflow-hidden">
         <div class="d-flex d-md-block justify-content-end">
             <div class="logo d-md-none d-flex">
-                <a href=""><img src="images/logo.png" alt=""></a>
+                <a href=""><img src="../images/logo.png" alt=""></a>
             </div>
             <ul class="nav justify-content-end">
                 <li class="nav-item d-md-block d-none">
-                    <a class="nav-link active" href="#"><img src="images/translate.png" alt=""></a>
+                    <a class="nav-link active" href="#"><img src="../images/translate.png" alt=""></a>
                 </li>
                 <li class="nav-item d-md-block d-none">
-                    <a class="nav-link" href="#"><img src="images/account.png" alt=""></a>
+                    <a class="nav-link" href="#"><img src="../images/account.png" alt=""></a>
                 </li>
                 <li class="nav-item d-md-block d-none">
-                    <a class="nav-link" href="#"><img src="images/search.png" alt=""></a>
+                    <a class="nav-link" href="#"><img src="../images/search.png" alt=""></a>
                 </li>
                 <li class="wrap-hamburger" data-toggle="offcanvas">
                     <span class="label-menu d-md-block d-none">Меню</span>
@@ -61,69 +61,63 @@
 </header>
 <section class="breadcrumb-section">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-custom rounded-0">
+        <ol class="breadcrumb breadcrumb-custom rounded-0 bg-white">
             <div class="container">
-                <li class="breadcrumb-item" aria-current="page">> Договорительное управление</li>
+                <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a> > Инвестиции</li>
             </div>
         </ol>
     </nav>
 </section>
-<section class="slider-img container-fluid">
+<section class="main_banner investing container-fluid">
     <div class="container container-slider">
         <div class="row">
-            <h1> Профессиональное управление финансами</h1>
-            <p>Управление финансами — это то, чем компания занимается профессионально уже более 15 лет. Вы можете доверить свой капитал специалистам, не переживая о мелочах. Мы ставим ваши личные интересы и потребности на первый план, что позволяет оправдать любые инвестиционные ожидания.</p>
+            <h1>Инвестиции Mostlot</h1>
+            <p>Мы более 15 профессионально занимаемся управлением капиталом и за это время выработали свой собственный подход к инвестированию. Благодаря приобретенному опыту и постоянному развитию нам удается извлекать выгоду из капиталовложений при любых сценариях развития мировой экономики.</p>
         </div>
     </div>
 </section>
-<section class="section-articles">
-    <div class="container">
-        <div class="row mt-5">
-            <div class="article">
-                <h5>Всегда в курсе последних событий</h5>
-                <p>Мы понимаем, что для успешного управления финансами нужно быть в курсе всех событий, которые влияют на стремительно меняющийся финансовый рынок. Портфельные управляющие Mostlot регулярно мониторят тренды, чтобы вовремя реорганизовать ваш портфель и показать лучший результат.</p>
-            </div>
-            <div class="article">
-                <h5>Сохранение контроля</h5>
-                <p>После передачи капитала в доверительное управление Mostlot вы сохраняете за собой право его контроля. Управляющий будет держать вас в курсе событий, предоставит отчетность по первому запросу и при необходимости поможет реорганизовать портфель.</p>
+
+<section class="container investing-block mt-5">
+    <div class="row">
+        <div class="col-md-12 work-for-result-block">
+            <div class="text-block offset-xl-4 col-12 col-sm-12 col-md-12 col-xl-8 border-0">
+                <h5>Работа на результат</h5>
+                <p>Миссия Mostlot — диверсифицировать риски и обеспечить стабильную прибыль для каждого клиента. Сотрудники хедж-фонда во всех отделениях работают на результат, и это позволяет нам быть лучшими в своей отрасли.</p>
             </div>
         </div>
     </div>
-</section>
-<section class="section-cooperation">
-    <div class="container">
-        <div class="mt-5">
-            <h3 class="mx-auto text-center">Как происходит сотрудничество</h3>
-            <div class="">
-                <ul class="cooperation-step-by-step row">
-                    <li class="arrow-block"><span>1. Знакомство и анализ финансовых ожиданий</span></li>
-                    <li class="desc-block">Общение начинается со знакомства лично с вами и вашим финансовым положением. Мы определим инвестиционные возможности и ожидания, чтобы составить эффективный портфель на основе полученных данных.</li>
-                    <li class="arrow-block"><span>2. Разработка инвестиционной стратегии</span></li>
-                    <li class="desc-block">Управляющий разрабатывает для вас индивидуальную инвестиционную стратегию, в которой учтены все детали — от суммы капиталовложений до желаемой квартальной прибыли.</li>
-                    <li class="arrow-block"><span>3. Презентация</span></li>
-                    <li class="desc-block">Вы получаете от личного управляющего инвестиционную стратегию, в которой перечислены активы и план ее реализации.</li>
-                    <li class="arrow-block"><span>4. Долгосрочное сотрудничество</span></li>
-                    <li class="desc-block">После подписания всех документов, вы будете регулярно получать отчетность о состоянии вашего портфеля, заключенных сделках и общей экономической обстановке. Коммуникация осуществляется через выбранные вами каналы (интернет, телефон, мессенджер).</li>
-                </ul>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="row flex-column align-items-center p-3">
+                <img src="../images/main_invest/icon_invest_1.png" alt="" class="img-fluid mb-3">
+                <h5 class="text-center">Прогрессивные взгляды</h5>
+                <p class="text-center">Экономический ландшафт постоянно меняется, потому мы тщательно выявляем факторы, которые влияют на настроение на финансовом рынке, и грамотно используем их для получения выгоды. Это позволяет строить эффективные стратегии, которые приносят нашим клиентам стабильную прибыль.</p>
             </div>
         </div>
-    </div>
-</section>
-<section class="section-advantages">
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4 col-12">
-                <div class="row justify-content-center">
-                    <img src="images/advategas-section.png" class="img-fluid p-3 p-sm-0" alt="">
-                </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="row flex-column align-items-center p-3">
+                <img src="../images/main_invest/icon_invest_2.png" alt="" class="img-fluid mb-3">
+                <h5 class="text-center">Присутствие на мировой арене</h5>
+                <p class="text-center">Mostlot — хедж-фонд с глобальным охватом. Мы работаем в 30 странах мира и располагаем широкими инвестиционными возможностями. Это позволяет нам диверсифицировать риски и обеспечивать доход.</p>
             </div>
-            <div class="advantages-text-block col-md-8 col-12">
-                <h4>Преимущества доверительного управления</h4>
-                <p>Передавая капитал в доверительное управление Mostlot, вы полностью освобождаете себя от таких забот, как мониторинг новостей, технический анализ, заключение сделок, поиск новых ниш для инвестирования и т.д. — все это сделает управляющий. Вам остается только получать отчетность и наслаждаться выгодным сотрудничеством с Mostlot.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 mt-4">
+            <div class="row flex-column align-items-center p-3">
+                <img src="../images/main_invest/icon_invest_3.png" alt="" class="img-fluid mb-3">
+                <h5 class="text-center">Подход к инвестированию</h5>
+                <p class="text-center">Мы руководствуемся своим опытом, постоянно проводим исследования, профессионально защищаем ваш капитал и создаем прибыльные портфели. Благодаря тщательному отбору и постоянному анализу активов, нам удается получать прибыль в любых экономических условиях.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 mt-4">
+            <div class="row flex-column align-items-center p-3">
+                <img src="../images/main_invest/icon_invest_4.png" alt="" class="img-fluid mb-3">
+                <h5 class="text-center">Ответственное инвестирование</h5>
+                <p class="text-center">Мы всегда учитываем управленческие, социологические и экологические факторы при выборе активов. Ответственные инвестирование позволяет Mostlot получать стабильный доход в долгосрочной перспективе.</p>
             </div>
         </div>
     </div>
 </section>
+
 <footer class="section-footer">
     <div class="container-fluid">
         <div class="row footer-menu">
@@ -135,10 +129,10 @@
                             <p> Адрес: <br>
                                 36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
                             <div class="social-block">
-                                <a href="#" class="facebook"><img src="images/fb-icon.png" alt=""></a>
-                                <a href="#" class="youtube"><img src="images/youtube-icon.png" alt=""></a>
-                                <a href="#" class="insta"><img src="images/insta-icon.png" alt=""></a>
-                                <a href="#" class="vk"><img src="images/vk-icon.png" alt=""></a>
+                                <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                                <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                                <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                                <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -181,10 +175,10 @@
                         <p> Адрес: <br>
                             36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
                         <div class="social-block text-center">
-                            <a href="#" class="facebook"><img src="images/fb-icon.png" alt=""></a>
-                            <a href="#" class="youtube"><img src="images/youtube-icon.png" alt=""></a>
-                            <a href="#" class="insta"><img src="images/insta-icon.png" alt=""></a>
-                            <a href="#" class="vk"><img src="images/vk-icon.png" alt=""></a>
+                            <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                            <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                            <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                            <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -198,16 +192,16 @@
                     </div>
                     <div class="d-flex justify-content-end col-md-8 block-pay row">
                         <div class="col-6 col-sm-6 col-md-3">
-                            <img class="img-fluid" src="images/fca-icon.png" alt="">
+                            <img class="img-fluid" src="../images/fca-icon.png" alt="">
                         </div>
                         <div class="col-6 col-sm-6 col-md-3">
-                            <img class="img-fluid" src="images/lei-icon.png" alt="">
+                            <img class="img-fluid" src="../images/lei-icon.png" alt="">
                         </div>
                         <div class="col-6 col-sm-6 col-md-3">
-                            <img class="img-fluid" src="images/visa-mastercard-icon.png" alt="">
+                            <img class="img-fluid" src="../images/visa-mastercard-icon.png" alt="">
                         </div>
                         <div class="col-6 col-sm-6 col-md-3">
-                            <img class="img-fluid" src="images/eng-bank.png" alt="">
+                            <img class="img-fluid" src="../images/eng-bank.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -218,6 +212,6 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

@@ -172,12 +172,19 @@
       }
     }
   }
-  .services-block {
+  .services-block, .invest_and_consult {
     .row {
       .col-12 {
         &:nth-child(odd) {
           border-right: none;
         }
+      }
+    }
+  }
+  .business_consulting-block, .invest_ipo-block {
+    .row {
+      .col-12 {
+        border-right: none;
       }
     }
   }
@@ -253,6 +260,18 @@
         .breadcrumb-item {
           font-size: 14px;
         }
+      }
+    }
+  }
+  .main_banner {
+    .container-slider {
+      h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 100;
       }
     }
   }
@@ -422,6 +441,21 @@
             }
           }
         }
+      }
+    }
+  }
+  .invest_ipo-block, .container-slider, .section-footer, .portfolio-block, .trusts-charity-block {
+    .row {
+      padding: 0 15px;
+      .list-trust-charity {
+        padding-left: 10px;
+        margin-top: 15px;
+      }
+      > .font-biggest {
+        font-size: 14px;
+      }
+      > .font-smaller {
+        font-size: 12px;
       }
     }
   }
