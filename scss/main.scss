@@ -1035,3 +1035,41 @@ li.nav-item {
   }
 }
 // ./about us
+// registration
+.registration-block {
+  background: url("../images/registration/main_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  .container {
+    .row {
+      justify-content: center;
+      .form-registration {
+        background: rgba(255,255,255,.6);
+        padding: 50px 10px;
+        border-radius: 10px;
+        .form-group {
+          .form-control {
+            background: transparent;
+            border-radius: 0;
+            border: 2px solid #96b2b5;
+          }
+        }
+        .btn-submit {
+          margin-top: 40px;
+          background-color: #008495;
+          padding: 10px 40px;
+          color: #fff;
+          border-radius: 0;
+          border: 2px solid #008495;
+          &:hover {
+            background-color: transparent;
+            color: #008495;
+          }
+        }
+      }
+    }
+  }
+}
+// ./registration
