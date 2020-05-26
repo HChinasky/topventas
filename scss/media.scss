@@ -11,6 +11,55 @@
   }
 }
 
+@media only screen and (max-width: 1360px) {
+  .section-cooperation, .how-do-we-work-block {
+    .container {
+      h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      .cooperation-step-by-step {
+        padding: 0 20px;
+        .arrow-block, .desc-block {
+          height: 150px;
+          width: 40%;
+          font-size: 14px;
+          margin-top: 30px;
+
+        }
+        .arrow-block {
+          height: 115px;
+          &:after {
+            border-top: 57px solid transparent;
+            border-bottom: 57px solid transparent;
+          }
+        }
+        .desc-block {
+          font-size: 12px;
+          align-items: start;
+          &:nth-child(6) {
+            margin-left: 50px;
+          }
+          &:last-child {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  // vacancies
+  .vacancies-block {
+    .row {
+      .col-12 {
+        .card-vacancies {
+          height: 260px;
+        }
+      }
+    }
+  }
+  // ./vacancies
+}
+
 @media only screen and (max-width: 767px) {
 
   #menuToggle input:checked ~ span {
@@ -85,7 +134,7 @@
       }
     }
   }
-  .section-cooperation {
+  .section-cooperation, .how-do-we-work-block {
     .container {
       h3 {
         font-size: 24px;
@@ -172,7 +221,7 @@
       }
     }
   }
-  .services-block, .invest_and_consult {
+  .services-block, .invest_and_consult-block, .carrier-block {
     .row {
       .col-12 {
         &:nth-child(odd) {
@@ -181,52 +230,50 @@
       }
     }
   }
-  .business_consulting-block, .invest_ipo-block {
+  .business_consulting-block, .invest_ipo-block, .our-goal-block {
     .row {
       .col-12 {
         border-right: none;
       }
     }
   }
-}
-@media only screen and (max-width: 1360px) {
-  .section-cooperation {
-    .container {
-      h3 {
-        font-size: 24px;
-        margin-bottom: 30px;
+  // vacancies
+  .vacancies-block {
+    .row {
+      .col-12 {
+        .card-vacancies {
+          height: 210px;
+        }
+        &:nth-child(odd) {
+          padding-left: 15px;
+        }
+        &:nth-child(even) {
+          padding-right: 15px;
+        }
       }
-      .cooperation-step-by-step {
-        padding: 0 20px;
-        .arrow-block, .desc-block {
-          height: 150px;
-          width: 40%;
-          font-size: 14px;
-          margin-top: 30px;
+    }
+  }
+  // ./vacancies
+  // contacts
+  .contacts-block {
+    padding: 20px 50px;
+    .col-12 {
+      margin-top: 20px;
 
-        }
-        .arrow-block {
-          height: 115px;
-          &:after {
-            border-top: 57px solid transparent;
-            border-bottom: 57px solid transparent;
-          }
-        }
-        .desc-block {
-          font-size: 12px;
-          align-items: start;
-          &:nth-child(6) {
-            margin-left: 50px;
-          }
-          &:last-child {
-            width: 40%;
+      #contact_us {
+        .form-row {
+          .form-group {
+            margin-top: 50px!important;
+            &:first-child {
+              margin-top: 0!important;
+            }
           }
         }
       }
     }
   }
+  // ./contacts
 }
-
 
 @media only screen and (max-width: 425px) {
   header {
@@ -299,7 +346,7 @@
       }
     }
   }
-  .section-cooperation {
+  .section-cooperation, .how-do-we-work-block {
     .container {
       h3 {
         font-size: 24px;
@@ -444,7 +491,7 @@
       }
     }
   }
-  .invest_ipo-block, .container-slider, .section-footer, .portfolio-block, .trusts-charity-block {
+  .invest_ipo-block, .container-slider, .section-footer, .portfolio-block, .trusts-charity-block, .growth-block, .privacy-policy-block, .our-goal-block, .about-us   {
     .row {
       padding: 0 15px;
       .list-trust-charity {
@@ -459,4 +506,15 @@
       }
     }
   }
+  // vacancies
+  .vacancies-block {
+    .row {
+      .col-12 {
+        .card-vacancies {
+          height: 310px;
+        }
+      }
+    }
+  }
+  // ./vacancies
 }

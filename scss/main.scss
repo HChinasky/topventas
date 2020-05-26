@@ -314,17 +314,15 @@ li.nav-item {
 
 // ./slider img
 // articles
-.section-articles {
-  .container {
-    .row {
-      .article {
-        h5 {
-          color: #008495;
-        }
+.section-articles, .about-us {
+  .row {
+    .article {
+      h5 {
+        color: #008495;
+      }
 
-        p {
-          color: #6C6C6C;
-        }
+      p {
+        color: #6C6C6C;
       }
     }
   }
@@ -332,7 +330,7 @@ li.nav-item {
 
 // ./articles
 // cooparation
-.section-cooperation {
+.section-cooperation, .how-do-we-work-block {
   .container {
     h3 {
       color: #008495;
@@ -342,7 +340,7 @@ li.nav-item {
     .cooperation-step-by-step {
       list-style: none;
       padding: 0;
-      .desc-block, .arrow-block {
+      .desc-block {
         width: 17%;
         font-size: 14px;
       }
@@ -362,17 +360,17 @@ li.nav-item {
       }
       .arrow-block {
         position: relative;
-        text-indent: 30px;
         height: 170px;
         background-color: #008495;
         display: flex;
         align-items: center;
         zoom: 1;
-        padding: 10px 10px 10px 30px;
+        padding: 10px 10px 10px 35px;
         color: white;
         font-size: 16px;
         text-align: center;
         margin-bottom: 25px;
+        width: 215px;
         &:after {
           content: "";
           position: absolute;
@@ -483,8 +481,6 @@ li.nav-item {
     }
     .row {
       align-items: center;
-      h1 {
-        }
     }
   }
   &.news-article-block {
@@ -517,6 +513,12 @@ li.nav-item {
     background-size: cover;
   }
 
+  &.invest_and_consult {
+    background: url("../images/invest_and_consult/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
   &.portfolio_banner {
     background: url("../images/portfolio/main_banner.png") center;
     background-position: center;
@@ -528,6 +530,63 @@ li.nav-item {
     background-position: center;
     background-size: cover;
   }
+
+  &.vacancies {
+    background: url("../images/vacancies/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+
+    .container-slider {
+      padding: 85px 0;
+    }
+  }
+
+  &.carrier {
+    background: url("../images/carrier/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.growth {
+    background: url("../images/growth/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.privacy-policy {
+    background: url("../images/about_us/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+
+    .container-slider {
+      padding: 85px 0;
+    }
+  }
+
+  &.how-do-we-work {
+    background: url("../images/how_do_we_work/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.our-team {
+    background: url("../images/our_team/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.our-goal {
+    background: url("../images/our_goal/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.about-us {
+    background: url("../images/about_us_2/main_banner.png") center;
+    background-position: center;
+    background-size: cover;
+  }
+
 
   .container-slider {
     padding: 60px 0;
@@ -541,7 +600,7 @@ li.nav-item {
     }
   }
 }
-.services-block, .invest_and_consult, .investing-block {
+.services-block, .invest_and_consult-block, .investing-block, .carrier-block {
   .row {
     .col-12 {
       &:nth-child(odd) {
@@ -684,7 +743,7 @@ li.nav-item {
 }
 // ./ipo explanation
 // business_consulting
-.business_consulting-block, .invest_ipo-block {
+.business_consulting-block, .invest_ipo-block, .our-goal-block {
   .row {
     .col-12 {
       border-right: 1px solid #bdbdbd;
@@ -720,7 +779,7 @@ li.nav-item {
 }
 // ./investment and consulting
 // ipo investing
-.invest_ipo-block {
+.invest_ipo-block, .our-goal-block {
   .row {
     > h5 {
       color: #008495;
@@ -766,10 +825,14 @@ li.nav-item {
   }
 }
 // ./portfolio
-// trust and charity
-.trusts-charity-block {
+// trust and charity & growth
+.trusts-charity-block, .growth-block {
   margin-top: 50px;
   .row {
+    h5 {
+      color: #008495;
+      font-size: 18px;
+    }
     .list-trust-charity {
       padding-left: 20px;
       li {
@@ -789,4 +852,186 @@ li.nav-item {
     }
   }
 }
-// ./trust and charity
+// ./trust and charity & growth
+// vacancies
+.vacancies-block {
+  .row {
+    .col-12 {
+      .card-vacancies {
+        box-shadow: 2px 2px 5px 2px rgba(204,204,204,1);
+        padding: 15px;
+        margin-top: 25px;
+        height: 210px;
+        h5 {
+          color: #008495;
+          font-size: 18px;
+        }
+        .respos {
+          color: #666666;
+          font-size: 14px;
+        }
+        .list-responsibilities {
+          padding-left: 20px;
+          li {
+            list-style-type: '>';
+            padding-left: 5px;
+            color: #333333;
+            font-size: 14px;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+    }
+  }
+}
+// ./vacancies
+// contacts
+.contacts-block {
+  background-color: #efefef;
+  padding: 20px 50px 0 50px;
+  .row {
+    h1 {
+      font-size: 18px;
+      color: #008495;
+    }
+    p {
+      font-size: 14px;
+      color: #333333;
+    }
+    .col-12 {
+      margin-top: 20px;
+      #contact_us {
+        .form-row {
+          .form-group {
+            margin: 0;
+          }
+        }
+        > .form-group {
+          margin-top: 50px;
+        }
+        .form-group {
+          .form-control {
+            border-radius: 0;
+          }
+        }
+        .btn-submit {
+          background-color: #008495;
+          padding: 10px 40px;
+          color: #fff;
+          border-radius: 0;
+          border: 2px solid #008495;
+          &:hover {
+            background-color: transparent;
+            color: #008495;
+          }
+        }
+      }
+    }
+  }
+}
+.address-block {
+  margin-top: 30px;
+  .row {
+    .col-12 {
+      h5 {
+        color: #008495;
+        font-size: 18px;
+      }
+      p.text-grey {
+        color: #666666;
+        font-size: 14px;
+        margin: 0;
+      }
+      p {
+        font-size: 18px;
+        color: #333333;
+        text-align: center;
+      }
+      a {
+        color: #333333;
+        font-size: 18px;
+      }
+    }
+  }
+}
+// ./contacts
+// privacy policy
+.privacy-policy-block {
+  margin-top: 20px;
+  .row {
+    p {
+      font-size: 14px;
+      color: #333333;
+    }
+    .sub-text {
+      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+// ./privacy policy
+// our team
+.our-team-block {
+  .row {
+    margin-top: 10px;
+    .col-12 {
+      margin-top: 20px;
+      .card-team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        background-color: #aedcf2;
+        height: 145px;
+        .fullname {
+          color: #008495;
+          font-size: 20px;
+        }
+        .position {
+          margin-bottom: 0;
+          text-align: center;
+          font-size: 16px;
+          color: #333333;
+        }
+        .sub-position {
+          font-size: 16px;
+          color: #7c7c7c;
+        }
+      }
+    }
+  }
+}
+// ./our team
+// about us
+.about-us {
+  .col-12 {
+    .row {
+      margin-top: 20px;
+      .col-12 {
+        .link-item-about-us {
+          box-shadow: 2px 2px 5px 2px rgba(204,204,204,1);
+          display: block;
+          padding: 20px;
+          img {
+            display: flex;
+          }
+          p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #008495;
+          }
+        }
+      }
+    }
+  }
+}
+// ./about us
