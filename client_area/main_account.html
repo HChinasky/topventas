@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/media.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-select-country.min.css">
+    <link rel="stylesheet" href="../css/inputmask.css">
+    <title>Gulp Server</title>
+</head>
+<body>
+<header>
+    <nav class="container overflow-hidden">
+        <div class="d-flex d-md-block justify-content-end">
+            <div class="logo d-md-none d-flex">
+                <a href=""><img src="../images/logo.png" alt=""></a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link active" href="#"><img src="../images/translate.png" alt=""></a>
+                </li>
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link" href="#"><img src="../images/account.png" alt=""></a>
+                </li>
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link" href="#"><img src="../images/search.png" alt=""></a>
+                </li>
+                <li class="wrap-hamburger" data-toggle="offcanvas">
+                    <span class="label-menu d-md-block d-none">Меню</span>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="menu" >
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu"><b>О Нас</b></a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Наша команда</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Как мы работаем</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Отзывы клиентов</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Заявление о конфиденциальности</a></li>
+        </ul>
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu"><b>Инвестиции</b></a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Личный кабинет</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Последние нормы сбережений</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Финансовые данные</a></li>
+        </ul>
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu">Контакты</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Карьера</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Глобальный</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="authorization-menu container-fluid d-none d-xl-block">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <ul class="lists-menu">
+                    <li class="item-menu"><a href="main_account.html">Счета<span class="sub-text">Основной счет</span></a></li>
+                    <li class="item-menu"><a href="transfer.html">Переводы<span class="sub-text">Транзакции средств</span></a></li>
+                    <li class="item-menu"><a href="investing.html">Инвестирование<span class="sub-text">Услуги ивестирования</span></a></li>
+                    <li class="item-menu"><a href="client_settings.html">Настройки<span class="sub-text">Настройки клиентов</span></a></li>
+                    <li class="item-menu"><a href="trade_terminal.html">Терминал<span class="sub-text">Торговый терминал</span></a></li>
+                    <li class="item-menu"><a href="verification.html">Верификация<span class="sub-text">Подтверждения клиента</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-account-section mt-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center person-info">
+                <div class="d-block profile-images">
+                    <img class="img-fluid" src="../images/client_area/main_account/profile_img.png" alt="">
+                </div>
+                <div class="d-flex text-block flex-column ml-3">
+                    <p class="person-fullname mb-0">Роман Золотарев</p>
+                    <p class="phone mb-0">+ 708-55-1212</p>
+                    <p class="email mb-0">zolotarev_roman865@gmail.com</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column account-info">
+                <p class="account-number mb-0 text-right">№12345678</p>
+                <p class="verification mb-0 not-verification text-right">Не верифицирован</p>
+            </div>
+        </div>
+        <div class="d-flex mt-4">
+            <h3 class="title-info-block">Основной счет</h3>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="bank-account">91****1156</p>
+            <p class="d-flex flex-column count-money text-right">$ 1,250.395<span class="available-money">Доступные средства</span></p>
+        </div>
+        <div class="info-block">
+            <div class="description">
+                <h5>Информация</h5>
+                <p>Проверить основной счет вы можете в личном кабинете. Каждому счету присваивается уникальный номер. В разделе “Основной счет” вы можете посмотреть баланс и операции по счету (даты создания заявок, их статус, тип, суммы, имя отправителя).</p>
+
+            </div>
+        </div>
+        <div class="d-flex mt-4">
+            <h3 class="title-info-block">Операции по счету</h3>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-lightblue">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Создано</th>
+                    <th scope="col">Тип операции</th>
+                    <th scope="col">Сума</th>
+                    <th scope="col">Статус</th>
+                    <th scope="col">Отправитель</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>23/12/20</td>
+                        <td>Пополнение</td>
+                        <td>$1000</td>
+                        <td>В обработке</td>
+                        <td>Roman</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<footer class="section-footer-client-area">
+    <div class="container-fluid">
+        <div class="row footer-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 d-md-block d-none">
+                        <div class="row">
+                            <p>Свяжитесь с нашими представителями обслуживания клиентов, чтобы помочь решить вашу проблему и вернуться в нужное русло.</p>
+                            <p> Адрес: <br>
+                                36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
+                            <p>Телефон: <br>
+                                +7(499)371-36-23</p>
+                            <p>Email: <br>
+                                support@bluetigerfinance.com</p>
+                            <div class="social-block">
+                                <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                                <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                                <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                                <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 col-sm-4 p-0">
+                        <a href="" class="footer-link-menu">О Нас</a>
+                        <a href="" class="footer-link-menu">Наша команда</a>
+                        <a href="" class="footer-link-menu">Как мы работаем</a>
+                        <a href="" class="footer-link-menu">Отзывы клиентов</a>
+                    </div>
+                    <div class="col-md-8 d-md-none d-block p-0">
+                        <p>Свяжитесь с нашими представителями обслуживания клиентов, чтобы помочь решить вашу проблему и вернуться в нужное русло.</p>
+                        <p> Адрес: <br>
+                            36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
+                        <div class="social-block text-center">
+                            <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                            <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                            <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                            <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 block-right-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex justify-content-center justify-content-md-start col-md-4">
+                        <p class="m-0 pt-2">All rights reserved. Copyright 2020. </p>
+                    </div>
+                    <div class="d-flex justify-content-end col-md-8 block-pay row">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/fca-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/lei-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/visa-mastercard-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/eng-bank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<script src="../js/bootstrap-select-country.min.js"></script>
+<script src="../js/jquery.inputmask.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/media.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-select-country.min.css">
+    <link rel="stylesheet" href="../css/inputmask.css">
+    <title>Gulp Server</title>
+</head>
+<body>
+<header>
+    <nav class="container overflow-hidden">
+        <div class="d-flex d-md-block justify-content-end">
+            <div class="logo d-md-none d-flex">
+                <a href=""><img src="../images/logo.png" alt=""></a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link active" href="#"><img src="../images/translate.png" alt=""></a>
+                </li>
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link" href="#"><img src="../images/account.png" alt=""></a>
+                </li>
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link" href="#"><img src="../images/search.png" alt=""></a>
+                </li>
+                <li class="wrap-hamburger" data-toggle="offcanvas">
+                    <span class="label-menu d-md-block d-none">Меню</span>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="menu" >
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu"><b>О Нас</b></a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Наша команда</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Как мы работаем</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Отзывы клиентов</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Заявление о конфиденциальности</a></li>
+        </ul>
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu"><b>Инвестиции</b></a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Личный кабинет</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Последние нормы сбережений</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Финансовые данные</a></li>
+        </ul>
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu">Контакты</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Карьера</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Глобальный</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="authorization-menu container-fluid d-none d-xl-block">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <ul class="lists-menu">
+                    <li class="item-menu"><a href="main_account.html">Счета<span class="sub-text">Основной счет</span></a></li>
+                    <li class="item-menu"><a href="transfer.html">Переводы<span class="sub-text">Транзакции средств</span></a></li>
+                    <li class="item-menu"><a href="investing.html">Инвестирование<span class="sub-text">Услуги ивестирования</span></a></li>
+                    <li class="item-menu"><a href="client_settings.html">Настройки<span class="sub-text">Настройки клиентов</span></a></li>
+                    <li class="item-menu"><a href="trade_terminal.html">Терминал<span class="sub-text">Торговый терминал</span></a></li>
+                    <li class="item-menu"><a href="verification.html">Верификация<span class="sub-text">Подтверждения клиента</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="investing-section">
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation active"><a href="#service_investing" aria-controls="service_investing" role="tab" data-toggle="tab">Услуги инвестирования</a></li>
+            <li role="presentation"><a href="#investment_portfolios" aria-controls="investment_portfolios" role="tab" data-toggle="tab">Инвестиционные портфели</a></li>
+            <li role="presentation"><a href="#partic_ipo" aria-controls="partic_ipo" role="tab" data-toggle="tab">Участие в IPO</a></li>
+        </ul>
+    </div>
+
+    <div class="tab-content container">
+        <div role="tabpanel" class="tab-pane in service_investing active" id="service_investing">
+            <p>
+                Основное направление Blue Tiger Finance Ltd - инвестирование. Мы уже более 15 лет успешно занимаемся
+                инвестированием в различные активы во всем мире. На странице "Инвестирование" вы можете подробно
+                ознакомиться с нашими инвестиционными принципами и преимуществами сотрудничества с Blue Tiger Finance Ltd.
+            </p>
+            <div class="rules-investing">
+                <div class="first-rule">
+                    <h4>1-й Принцип</h4>
+                    <span class="sub-title">Фундаментальное инвестирование</span>
+                    <p class="description">Мы полагаемся на надежную экономическую теорию и анализ, чтобы достичь долгосрочных выгодных результатов.</p>
+                </div>
+                <div class="second-rule">
+                    <h4>2-й Принцип</h4>
+                    <span class="sub-title">Дисциплинированная методология</span>
+                    <p class="description">Дисциплинарная методология - основа всего, что мы в Blue Tiger Finance Ltd. делаем. Мы разрабатываем инвестиционные стратегии, опираясь на свой многолетний опыт, непрерывно их тестируем и дорабатываем, адаптируем под современные тренды и требования рынка.</p>
+                </div>
+                <div class="third-rule">
+                    <h4>3-й Принцип</h4>
+                    <span class="sub-title">Продуманные стратегии</span>
+                    <p class="description">При составлении портфеля, управлении рисками и торговле мы стремимся обеспечить высокую прибыль клиентов. Используя качественные и количественные инструменты, мы тщательно прорабатываем каждую деталь инвестиционного процесса.</p>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane investment_portfolios" id="investment_portfolios">
+            <p class="investment_portfolios_desc">
+                <strong>Инвестиционный портфель</strong> – это набор ценных бумаг, приобретаемый инвестором с целью получения прибыли.
+                Для современных инвестиций, формирование инвестиционного портфеля просто необходимо. Портфель акций содержит в
+                себе разные отрасли, акции отбирались по стратегии Купи и держи которую так любит Уоррен Баффетт.
+                Учитывая графики многих компаний, даже по консервативной стратегии отдельные акции могут принести более 200% годовых, а портфель служит контролем риска.
+            </p>
+            <div class="lists-book">
+                <div class="first-book">
+                    <div class="row">
+                        <div class="d-flex flex-column align-items-center col-2 cover-book">
+                            <img class="img-fluid" src="../images/client_area/investing/book_1.png" alt="">
+                            <a href="#" download>Скачать PDF</a>
+                        </div>
+                        <div class="d-flex flex-column col-10 about-book">
+                            <h4 class="title-book">Individual Moderate Profits Portfolio 2020</h4>
+                            <span class="info-book">Общ. доход %: 41,90</span>
+                            <p class="description-book">
+                                Инвестиционный портфель Individual Moderate Profits Portfolio На фоне постоянно меняющейся
+                                обстановки на финансовой арене специалисты Blue Tiger Finance Ltd разрабатывают наиболее эффективные
+                                стратегии портфельного инвестирования. Руководствуясь своим личным опытом и наработками мировых экспертов,
+                                мы создали портфель Individual Moderate Profits Portfolio. В нем максимально сбалансированы активы, которые
+                                выполняют две основные функции — защищают ваш капитал и приносят прибыль.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-book">
+                    <div class="row">
+                        <div class="d-flex align-items-center flex-column col-2 cover-book">
+                            <img class="img-fluid" src="../images/client_area/investing/book_2.png" alt="">
+                            <a href="#" download>Скачать PDF</a>
+                        </div>
+                        <div class="d-flex flex-column col-10 about-book">
+                            <h4 class="title-book">Individual portfolio of increased profits 2020</h4>
+                            <span class="info-book">Общ. доход %: 65,02</span>
+                            <p class="description-book">Инвестиционный портфель Individual Portfolio of Increased Profits Несмотря на то, что многие эксперты были настроены  оптимистично касательно развития экономики в 2020 году, непредвиденные обстоятельства внесли свои корректировки. Специалисты Blue Tiger Finance Ltd проявляют чрезвычайную гибкость, потому могут получать выгоду от инвестирования в наиболее волатильные активы. Для тех, кто хочет получать максимальную выгоду мы создали портфель Individual Portfolio of Increased Profits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane partic_ipo" id="partic_ipo">
+            <div class="table-ipo">
+                <h4 class="title-table-ipo">Таблица IPO</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-lightblue">
+                        <tr>
+                            <th scope="col">Компания</th>
+                            <th scope="col">Цена</th>
+                            <th scope="col">Биржа</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Дата IPO</th>
+                            <th scope="col">Оценка компании</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Airbnb</td>
+                            <td>105</td>
+                            <td>NASDAQ</td>
+                            <td>295,000,000</td>
+                            <td>11/18/2020</td>
+                            <td>31 млрд.</td>
+                        </tr>
+                        <tr>
+                            <td>Gitlab</td>
+                            <td>19</td>
+                            <td>NASDAQ</td>
+                            <td>150,000,000</td>
+                            <td>11/18/2020</td>
+                            <td>2,88 млрд.</td>
+                        </tr>
+                        <tr>
+                            <td>Ant Financial</td>
+                            <td>ожидается</td>
+                            <td>HKE</td>
+                            <td>ожидается</td>
+                            <td>ожидается</td>
+                            <td>150 млрд.</td>
+                        </tr>
+                        <tr>
+                            <td>Robinhood</td>
+                            <td>12</td>
+                            <td>NYSE</td>
+                            <td>600,000,000</td>
+                            <td>ожидается</td>
+                            <td>7,6 млрд.</td>
+                        </tr>
+                        <tr>
+                            <td>Unity Technology</td>
+                            <td>22</td>
+                            <td>NASDAQ</td>
+                            <td>270,000,000</td>
+                            <td>ожидается</td>
+                            <td>6 млрд.</td>
+                        </tr>
+                        <tr>
+                            <td>Databricks</td>
+                            <td>43</td>
+                            <td>ожидается</td>
+                            <td>140,000,000</td>
+                            <td>ожидается</td>
+                            <td>6,2 млрд.</td>
+                        </tr>
+                        <tr>
+                            <td>Intercom</td>
+                            <td>46,43</td>
+                            <td>NYSE</td>
+                            <td>26,000,000</td>
+                            <td>ожидается</td>
+                            <td>1,2 млрд.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="expected-ipo">
+                    <h4 class="title-table-ipo">Ожидаемые IPO</h4>
+                    <div class="lists-company">
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/airbnb.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">Airbnb</h4>
+                                    <p class="description-company">Онлайн-площадка которая объединяет арендаторов и арендодателей частного жилья по всему миру. Пользователи Airbnb сдают в аренду жилье целиком или частично. Сайт предоставляет платформу для установления контакта между хозяином и гостем, а также выступает посредником при оплате, гарантируя честность и безопасность. Airbnb предоставляет возможность арендовать жилье в 70 000 городов 191 страны мира. С момента основания в августе 2008 года через сайт Airbnb нашли жилье более 200 млн человек. За свою деятельность Airbnb взимает определенный процент — с хозяев апартаментов 3 % от суммы бронирования, с арендатора — от 6 % до 12 %.  Онлайн-сервис бронирования недвижимости Airbnb в объявил о планах стать публичным в 2020 г. По данным PitchBook, последняя оценка Airbnb частными инвесторами составила $31 млрд. Сама компания пока не объявила каких-либо подробностей IPO. Сама компания пока не  объявила каких-либо подробностей IPO. IT-компания обозначила точную дату IPO — 18 ноября 2020 г.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/gitlab.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">Gitlab</h4>
+                                    <p class="description-company">Gitlab разрабатывает инструменты как для контроля, конфигурации и планирования процессов разработки программного кода, так и для защиты, разработки, контроля  результата разработки и релиза программного кода. Gitlab – единая платформа для полноценной DevOps разработки. Компания разработала процесс одновременной DevOps разработки, которая дает возможность выполнять одновременно множество процессов по разработке и в итоге сильно уменьшить время процесса разработки софтверных ПО в два и более раз. Gitlab делает доступным программный код в формате open source, при этом корпоративные решения с индивидуальным и более расширенным функционалом продаются и не выгружаются в открытый доступ. Используя уникальную модель Gitlab внушительно увеличивает число функций, разработанных на базе базового программного кода, а также эффективно монетизирует свою платформу. Gitlab работает в сегменте B2B на рынке ПО для управления разработкой кода. Компания предоставляет услуги через подписку на  комплексные решения рассчитанных на одного сотрудника, отличающиеся по функционалу и количеству, включенных в стоимость, минут использования платформы. Более 100 000 разработчиков комитет программный код для open source решения Gitlab, корпоративной платформой пользуется более 100 000 заказчиков, среди которых: Goldman Sachs, ING, Nasdaq, Nomura, Ameritrade, Siemens, Alibaba, EA, Expedia, Lockheed Martin, Nutanix, Sony, Uber, Red Hat, Thomson Reuters, SanDisk, Verizon, Government of Canada, U.S. Air Force.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/Ant_Financial.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">Ant Financial</h4>
+                                    <p class="description-company">Является дочерней компанией китайской Alibaba, самой дорогой финтех-компанией и одной из самых дорогих непубличных компаний. Она владеет платежной системой Alipay и предлагает своим клиентам сберегательные и кредитные продукты. По прогнозу компании, около 65% ее выручки в период с 2018 по 2023 годы будет поступать от финансовых технологий, ориентированных на бизнес, таких как поддержка корпоративных клиентов и услуги предотвращения мошенничества. Ant Financial все меньше внимания уделяет потребительскому рынку из-за растущего контроля финансовых рисков китайским регулятором. Ant Financial не сообщила, во сколько инвесторы оценили финтех-стартап. По данным Reuters, компания стоит около $150 млрд, что делает ее одной из самых дорогих на финансовом рынке.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/robinhood-logo.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">Robinhood</h4>
+                                    <p class="description-company">Онлайн брокер создавший мобильное приложение для торговли акциями, ETF, опционами и криптовалютами. Брокер фокусируется на внешнем виде UI приложения, его цель сделать приобретение инвестиционного инструмента максимально понятной и удобной, а отслеживание результатов максимально быстрым, логичным и прозрачным. Прорывом Robinhood стала отмена комиссии за осуществление покупки акций (есть комиссия за пополнение/вывод средств определенными способами). Вместо комиссии Robinhood зарабатывает на подписке к расширенному функционалу (маржинальная торговля, осуществления транзакций до открытия и после закрытия биржи, исследования рынка), проценте за управление остатками денежных средств на счетах клиентов, перепродаже ордеров клиентов компаниям, занимающихся высокочастотным трейдингом. Robinhood работает в сегменте B2C на рынке финансовых технологий. Всего в приложении Robinhood зарегистрировано 6 миллионов пользователей.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/Unity_logo.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">Unity</h4>
+                                    <p class="description-company">Разработчики популярной интерактивной площадки для разработки видеоигр, с наличием инструментов для создания и поддержки игр, работающих в различных операционных системах и устройствах. Так же платформа Unity может использоваться для дизайна и проектирования VR- и AR приложений, а также создания 2D и 3D-контента в различных отраслях: кинематографе, автомобильной промышленности, архитектурном проектировании и других.  Unity - ведущий поставщик решений для разработки мобильных игр и AR/VR контента. Более 50% всех мобильных игр разработано на базе игрового движка Unity, свыше 60% VR/AR контента создано на платформе Unity, разработанные на Unity игры были установлены на более чем 3 млрд. устройствах. Платформа Unity и/или отдельные ее модули используются как новыми успешными игровыми студиями такими, как Niantic, Playrix, так и крупнейшими разработчиками и издателями игр – Blizzard, EA, Activision. Даже ближайший конкурент Unity – Epic Games использует отдельные сервисы Unity (внутриигровой чат Vivox, сеть мобильной рекламы Unity Ads).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/databricks-logo.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">Databricks</h4>
+                                    <p class="description-company">Платформа предоставляющая инструменты для анализа больших данных, созданная разработчиками Apache Spark. Databricks создает и внедряет инструменты для упрощения процессов создания пайплайна данных из разрозненных источников и их структурированию для формирования паттернов и использовании их в исследованиях огромных массивах данных. Databricks решает проблемы разрозненности данных и разрыва между обработкой данных и платформами машинного обучения. Помимо этого, платформа объединяет исследователей данных с инженерами данных и бизнес подразделениями для формирования продуктов на базе данных, собираемых компанией, которые были бы востребованы среди специалистов бизнес подразделений. Databricks обладает интерфейсом, понятным как специалистам в области данных, так и бизнес подразделениям, а также позволяет управлять хранением и обработкой всех собираемых компанией данных из одного окна, быстро проводить тестирование гипотез и масштабировать продукты на базе данных, защищать облачную инфраструктуру хранения данных, а также упрощает процессы управления данными.
+                                        Более 200 организаций по всему миру используют платформу DataBricks, среди клиентов: Nielsen, Hotels.com, Overstock, Bechtel, Shell и HP. Databricks работает в сегменте B2B (enterprise SaaS), на рынке анализа данных. Компания продает время использования процессинговых мощностей платформы, оплата начисляется ежесекундно.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="row">
+                                <div class="d-flex align-items-center flex-column col-2 logo-company justify-content-center">
+                                    <img class="img-fluid" src="../images/client_area/investing/Intercom_logo.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column col-10 about-company">
+                                    <h4 class="title-company">InterCom</h4>
+                                    <p class="description-company">Разработчик платформы для общения с клиентами. Платформа интегрирована с наиболее популярными CRM, ERP, площадками для коллаборативной работы и платежными системами (например, SalesForce, Slack и Stripe), мессенджерами Facebook и Twitter (любые коммуникации с клиентами из одного окна на платформе). Intercom используется для технической поддержки, маркетинга и коммуникации с клиентами. Платформа позволяет компаниям видеть и коммуницировать с клиентами в режиме реального времени и отправлять целевые сообщения посетителям сайта, а также пользователям приложений для Android и iOS. С помощью Intercom возможно алгоритмизировать коммуникацию с клиентами в зависимости от их характеристик от первого контакта до закрытия сделки. Платформа также содержит модуль аналитики для оптимизации сценариев коммуникации, которые используются продавцами с поддержкой функционала A/B-тестирования и измерения эффективности продавцов и отдельных сообщений. Также Intercom предлагает клиентам готовых ботов для ответа на простые вопросы клиентов и лидогенерации круглосуточно. Ключевая задача Intercom – лидогенерация и увеличение конвертируемости посетителей сайта в клиентов, повышение качества сервисного обслуживания, активация клиентов. Intercom работает в сегменте B2B (enterprise SaaS) в сегменте унифицированных коммуникаций. Intercom предлагает решения как для крупного, так и малого и среднего бизнеса. Intercom продает ежемесячную подписку на сервис в расчете на одного сотрудника отдела продаж и количества клиентов, взаимодействующих каждый месяц с платформой. Также отдельно Intercom продает подписку на готовых ботов.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="section-footer-client-area">
+    <div class="container-fluid">
+        <div class="row footer-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 d-md-block d-none">
+                        <div class="row">
+                            <p>Свяжитесь с нашими представителями обслуживания клиентов, чтобы помочь решить вашу проблему и вернуться в нужное русло.</p>
+                            <p> Адрес: <br>
+                                36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
+                            <p>Телефон: <br>
+                                +7(499)371-36-23</p>
+                            <p>Email: <br>
+                                support@bluetigerfinance.com</p>
+                            <div class="social-block">
+                                <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                                <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                                <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                                <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 col-sm-4 p-0">
+                        <a href="" class="footer-link-menu">О Нас</a>
+                        <a href="" class="footer-link-menu">Наша команда</a>
+                        <a href="" class="footer-link-menu">Как мы работаем</a>
+                        <a href="" class="footer-link-menu">Отзывы клиентов</a>
+                    </div>
+                    <div class="col-md-8 d-md-none d-block p-0">
+                        <p>Свяжитесь с нашими представителями обслуживания клиентов, чтобы помочь решить вашу проблему и вернуться в нужное русло.</p>
+                        <p> Адрес: <br>
+                            36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
+                        <div class="social-block text-center">
+                            <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                            <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                            <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                            <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 block-right-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex justify-content-center justify-content-md-start col-md-4">
+                        <p class="m-0 pt-2">All rights reserved. Copyright 2020. </p>
+                    </div>
+                    <div class="d-flex justify-content-end col-md-8 block-pay row">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/fca-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/lei-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/visa-mastercard-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/eng-bank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<script src="../js/bootstrap-select-country.min.js"></script>
+<script src="../js/jquery.inputmask.min.js"></script>
+</body>
+</html>

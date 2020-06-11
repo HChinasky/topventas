@@ -24,4 +24,7 @@ $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
     $('#menu').toggleClass('toggled');
   });
+
+   $(":input").inputmask();
+
 });

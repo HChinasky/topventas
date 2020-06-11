@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/media.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-select-country.min.css">
+    <link rel="stylesheet" href="../css/inputmask.css">
+    <title>Gulp Server</title>
+</head>
+<body>
+<header>
+    <nav class="container overflow-hidden">
+        <div class="d-flex d-md-block justify-content-end">
+            <div class="logo d-md-none d-flex">
+                <a href=""><img src="../images/logo.png" alt=""></a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link active" href="#"><img src="../images/translate.png" alt=""></a>
+                </li>
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link" href="#"><img src="../images/account.png" alt=""></a>
+                </li>
+                <li class="nav-item d-md-block d-none">
+                    <a class="nav-link" href="#"><img src="../images/search.png" alt=""></a>
+                </li>
+                <li class="wrap-hamburger" data-toggle="offcanvas">
+                    <span class="label-menu d-md-block d-none">Меню</span>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="menu" >
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu"><b>О Нас</b></a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Наша команда</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Как мы работаем</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Отзывы клиентов</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Заявление о конфиденциальности</a></li>
+        </ul>
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu"><b>Инвестиции</b></a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Личный кабинет</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Последние нормы сбережений</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Финансовые данные</a></li>
+        </ul>
+        <ul class="col-12">
+            <li><a href="" class="footer-link-menu">Контакты</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Карьера</a></li>
+            <li class="p-0"><a href="" class="footer-link-menu">Глобальный</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="authorization-menu container-fluid d-none d-xl-block">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <ul class="lists-menu">
+                    <li class="item-menu"><a href="main_account.html">Счета<span class="sub-text">Основной счет</span></a></li>
+                    <li class="item-menu"><a href="transfer.html">Переводы<span class="sub-text">Транзакции средств</span></a></li>
+                    <li class="item-menu"><a href="investing.html">Инвестирование<span class="sub-text">Услуги ивестирования</span></a></li>
+                    <li class="item-menu"><a href="client_settings.html">Настройки<span class="sub-text">Настройки клиентов</span></a></li>
+                    <li class="item-menu"><a href="trade_terminal.html">Терминал<span class="sub-text">Торговый терминал</span></a></li>
+                    <li class="item-menu"><a href="verification.html">Верификация<span class="sub-text">Подтверждения клиента</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="transfer-section">
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#refill" class="active" aria-controls="service_investing" role="tab" data-toggle="tab">Пополнение счета</a></li>
+            <li role="presentation"><a href="#withdraw_account" aria-controls="investment_portfolios" role="tab" data-toggle="tab">Вывод со счета</a></li>
+        </ul>
+    </div>
+
+    <div class="tab-content container">
+        <div role="tabpanel" class="tab-pane in refill-block active" id="refill">
+            <div class="info-block">
+                <div class="description">
+                    <h5>Информация</h5>
+                    <p>
+                        Раздел личного кабинета "Пополнение счета" содержит инструкцию по пополнению счета и форму, а которую нужно внести следующие данные: номер счета, сумма пополнения и метод пополнения. Также в этом разделе отображаются предыдущие операции пополнения.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex mt-4">
+                <h3 class="title-info-block">Заполните все необходимые поля</h3>
+            </div>
+            <div class="col-12 col-md-8">
+                <form action="/" method="post">
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="bill_field" class="col-sm-3 col-form-label">Счёт:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="bill_field">
+                                <option value="1">41005 - 5 EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="method_payment" class="col-sm-3 col-form-label">Метод платежа:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="method_payment">
+                                <option value="0">Выберите</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="refill_currency" class="col-sm-3 col-form-label">Валюта пополнения:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="refill_currency"></select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="address_field" class="col-sm-3 col-form-label">Сумма пополнения:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="address_field">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between row pl-3 align-items-center">
+                        <span>* Вы будете перенаправлены на страницу оплаты</span>
+                        <input type="submit" class="btn-submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+            <div class="info-block mt-5">
+                <div class="description">
+                    <h5>Информация</h5>
+                    <p>Инструкция для пополнения вашего счета</p>
+                    <p>Пополнение торгового счета</p>
+
+                    <p>1. Укажите номер торгового счета, на который будут зачислены средства.</p>
+                    <p>2. Выберите метод платежа.</p>
+                    <p>3. Укажите сумму пополнения.</p>
+                    <p>4. Нажмите на кнопку «Отправить».</p>
+                     <p>Нажимая кнопку «Отправить», Вы будете переведены на страницу с инвойсом и кнопкой ОПЛАТИТЬ.</p>
+                </div>
+            </div>
+            <h4 class="title-info-block mt-5">Финансы</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-lightblue">
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Создано</th>
+                        <th scope="col">Сумма</th>
+                        <th scope="col">Статус</th>
+                        <th scope="col">Метод оплаты</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>23/12/2020</td>
+                        <td>$1000</td>
+                        <td>В обработке</td>
+                        <td>Roman</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane investment_portfolios" id="withdraw_account">
+            <div class="info-block">
+                <div class="description">
+                    <h5>Информация</h5>
+                    <p>
+                        В разделе "Вывод" вы можете заполнить заявку на вывод средств, внеся в специальную форму все необходимые данные (номер счета, способ вывода, сумма) и просмотреть все предыдущие заявки на вывод и их статус.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex mt-4">
+                <h3 class="title-info-block">Заполните все необходимые поля</h3>
+            </div>
+            <div class="col-12 col-md-8">
+                <form action="/" method="post">
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="output_bill_field" class="col-sm-3 col-form-label">Счёт:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="output_bill_field">
+                                <option value="1">41005 - 5 EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="output_method_payment" class="col-sm-3 col-form-label">Метод платежа:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="output_method_payment">
+                                <option value="0">Выберите</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="output_refill_currency" class="col-sm-3 col-form-label">Валюта пополнения:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="output_refill_currency"></select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-between text-field">
+                        <label for="output_address_field" class="col-sm-3 col-form-label">Сумма пополнения:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="output_address_field">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end row align-items-center">
+                        <input type="submit" class="btn-submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+
+            <h4 class="title-info-block mt-5">Финансы</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-lightblue">
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Создано</th>
+                        <th scope="col">Сумма</th>
+                        <th scope="col">Статус</th>
+                        <th scope="col">Метод оплаты</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>23/12/2020</td>
+                        <td>$1000</td>
+                        <td>В обработке</td>
+                        <td>Roman</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="section-footer-client-area">
+    <div class="container-fluid">
+        <div class="row footer-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 d-md-block d-none">
+                        <div class="row">
+                            <p>Свяжитесь с нашими представителями обслуживания клиентов, чтобы помочь решить вашу проблему и вернуться в нужное русло.</p>
+                            <p> Адрес: <br>
+                                36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
+                            <p>Телефон: <br>
+                                +7(499)371-36-23</p>
+                            <p>Email: <br>
+                                support@bluetigerfinance.com</p>
+                            <div class="social-block">
+                                <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                                <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                                <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                                <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 col-sm-4 p-0">
+                        <a href="" class="footer-link-menu">О Нас</a>
+                        <a href="" class="footer-link-menu">Наша команда</a>
+                        <a href="" class="footer-link-menu">Как мы работаем</a>
+                        <a href="" class="footer-link-menu">Отзывы клиентов</a>
+                    </div>
+                    <div class="col-md-8 d-md-none d-block p-0">
+                        <p>Свяжитесь с нашими представителями обслуживания клиентов, чтобы помочь решить вашу проблему и вернуться в нужное русло.</p>
+                        <p> Адрес: <br>
+                            36 Commerce Road, Lynchwood, Peterborough, Cambridgeshire, PE2 6LR</p>
+                        <div class="social-block text-center">
+                            <a href="#" class="facebook"><img src="../images/fb-icon.png" alt=""></a>
+                            <a href="#" class="youtube"><img src="../images/youtube-icon.png" alt=""></a>
+                            <a href="#" class="insta"><img src="../images/insta-icon.png" alt=""></a>
+                            <a href="#" class="vk"><img src="../images/vk-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 block-right-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex justify-content-center justify-content-md-start col-md-4">
+                        <p class="m-0 pt-2">All rights reserved. Copyright 2020. </p>
+                    </div>
+                    <div class="d-flex justify-content-end col-md-8 block-pay row">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/fca-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/lei-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/visa-mastercard-icon.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="../images/eng-bank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<script src="../js/bootstrap-select-country.min.js"></script>
+<script src="../js/jquery.inputmask.min.js"></script>
+</body>
+</html>
